@@ -1,0 +1,65 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 4",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "19723e4c90bd385a8d55",
+      "ordinal": 3,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dash3-JL",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "544b7055d67a84869b7a",
+      "ordinal": 2,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dash2-JL",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "66fa8e0a1b0d4c57c12d",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dash1 - JL",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "70af9660ebda0c5e0639",
+      "visualContainers": [],
+      "width": 1280.00
+    }
+  ]
+}
