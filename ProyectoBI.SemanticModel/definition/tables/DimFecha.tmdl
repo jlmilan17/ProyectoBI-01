@@ -1,0 +1,87 @@
+table DimFecha
+	lineageTag: f559fc6d-9dfa-46d4-83ea-b28dcef2a6ed
+
+	column IdFechaDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d88fa9c-8fdf-46cb-bc44-d1133e260add
+		summarizeBy: none
+		sourceColumn: IdFechaDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d4f80eee-24b9-437d-a276-85de9b4e0181
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variación
+			isDefault
+			relationship: cb262211-6ca5-43ab-8217-c6dc5bfadcce
+			defaultHierarchy: LocalDateTable_7aabe375-68a7-4805-aebf-6851cad74940.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Anio
+		dataType: int64
+		formatString: 0
+		lineageTag: cd842d24-433d-4366-ba86-b3c5549c806a
+		summarizeBy: sum
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: int64
+		formatString: 0
+		lineageTag: df920fdb-3e25-4881-916b-1740bbe0fafa
+		summarizeBy: sum
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		dataType: int64
+		formatString: 0
+		lineageTag: d2240a21-b3b7-4456-8bbb-766076e267d4
+		summarizeBy: sum
+		sourceColumn: Dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: 14dcc2de-482a-4fb0-b805-5e1e89055750
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiaSemana
+		dataType: string
+		lineageTag: 24dd0bd8-a01c-49f9-ab2c-1e2084ba10a5
+		summarizeBy: none
+		sourceColumn: DiaSemana
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreMes
+		dataType: string
+		lineageTag: 2008dcc1-4f4c-40a2-bd82-90d64f8b9542
+		summarizeBy: none
+		sourceColumn: NombreMes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimFecha = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_DimFecha = TallerDW{[Schema="dbo",Item="DimFecha"]}[Data]
+				in
+				    dbo_DimFecha
+

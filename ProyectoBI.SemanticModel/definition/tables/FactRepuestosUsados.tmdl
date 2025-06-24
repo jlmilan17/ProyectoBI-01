@@ -1,0 +1,69 @@
+table FactRepuestosUsados
+	lineageTag: c756567a-40cf-4063-bac3-ea18d9b98bfb
+
+	column IdRepuestoUsadoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: af967d14-1b6c-430a-b462-40959ec8d568
+		summarizeBy: sum
+		sourceColumn: IdRepuestoUsadoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdOrdenTrabajoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: e90a374b-a03a-49b9-bfed-689104a42d2b
+		summarizeBy: none
+		sourceColumn: IdOrdenTrabajoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdRepuestoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 28f51ff0-3be5-46fe-9e7e-c37fa6f60c61
+		summarizeBy: none
+		sourceColumn: IdRepuestoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column CantidadUtilizada
+		dataType: int64
+		formatString: 0
+		lineageTag: b43ae987-ddac-421a-8934-782db53847de
+		summarizeBy: sum
+		sourceColumn: CantidadUtilizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostoUnitario
+		dataType: double
+		lineageTag: 278fd811-4f1b-439a-a13d-43d247420156
+		summarizeBy: sum
+		sourceColumn: CostoUnitario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostoTotal
+		dataType: double
+		lineageTag: e6d47251-d643-41e9-ba13-292dc369afcd
+		summarizeBy: sum
+		sourceColumn: CostoTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactRepuestosUsados = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_FactRepuestosUsados = TallerDW{[Schema="dbo",Item="FactRepuestosUsados"]}[Data]
+				in
+				    dbo_FactRepuestosUsados
+

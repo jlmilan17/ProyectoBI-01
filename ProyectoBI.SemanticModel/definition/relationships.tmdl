@@ -1,0 +1,54 @@
+relationship cb262211-6ca5-43ab-8217-c6dc5bfadcce
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimFecha.Fecha
+	toColumn: LocalDateTable_7aabe375-68a7-4805-aebf-6851cad74940.Date
+
+relationship 5e18732e-8633-4ec0-b5a4-2f65d9e7812c
+	fromColumn: FactOrdenesTrabajo.IdFechaEntradaDW
+	toColumn: DimFecha.IdFechaDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship 073b8368-7b33-4674-a96d-ab0b1b98a9fa
+	isActive: false
+	fromColumn: FactOrdenesTrabajo.IdFechaSalidaDW
+	toColumn: DimFecha.IdFechaDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship 93229378-a35e-43b7-a7d8-607bd339ada2
+	fromColumn: FactOrdenesTrabajo.IdClienteDW
+	toColumn: DimCliente.IdClienteDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship 2ec6b7a2-35b1-4a9e-af77-4fc6d2db17b2
+	fromColumn: FactOrdenesTrabajo.IdServicioDW
+	toColumn: DimServicio.IdServicioDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship 034c45ab-b8df-4c55-a4e1-5f4ba210d6ea
+	fromColumn: FactOrdenesTrabajo.IdTecnicoDW
+	toColumn: DimTecnico.IdTecnicoDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship cd5df0ed-2373-48ac-b5cf-ae39e24dec80
+	fromColumn: FactOrdenesTrabajo.IdVehiculoDW
+	toColumn: DimVehiculo.IdVehiculoDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship f4b2568d-8787-424a-b5c1-2a4bc8813b95
+	fromColumn: FactRepuestosUsados.IdRepuestoDW
+	toColumn: DimRepuesto.IdRepuestoDW
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4aabcc21-1c18-4a10-98b2-fddee900b2e1
+	fromColumn: FactRepuestosUsados.IdOrdenTrabajoDW
+	toColumn: FactOrdenesTrabajo.IdOrdenTrabajoDW
+
+	annotation PBI_IsFromSource = FS
+

@@ -1,0 +1,56 @@
+table DimServicio
+	lineageTag: 2d7e8521-0839-4287-b229-158fc619dcf2
+
+	column IdServicioDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ae152f4-c995-4234-b6d8-e5a5c066a116
+		summarizeBy: none
+		sourceColumn: IdServicioDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreServicio
+		dataType: string
+		lineageTag: ff7d6034-0472-412a-9847-ca04215bc145
+		summarizeBy: none
+		sourceColumn: NombreServicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		lineageTag: ed58c354-80cf-447a-bcad-86091a9f4189
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column TiempoPromedioRef
+		dataType: int64
+		formatString: 0
+		lineageTag: 53c5a3b6-7ae2-49c4-9e30-eb6ee903e43a
+		summarizeBy: none
+		sourceColumn: TiempoPromedioRef
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdServicioNT
+		dataType: int64
+		formatString: 0
+		lineageTag: bf5a3a21-9f49-4e8d-aabb-7ddd3aa4651d
+		summarizeBy: none
+		sourceColumn: IdServicioNT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimServicio = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_DimServicio = TallerDW{[Schema="dbo",Item="DimServicio"]}[Data]
+				in
+				    dbo_DimServicio
+

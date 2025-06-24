@@ -1,9 +1,30 @@
 model Model
 	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-SV
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+
+annotation PBI_QueryOrder = ["DimFecha","DimCliente","DimRepuesto","DimServicio","DimTecnico","DimVehiculo","FactOrdenesTrabajo","FactRepuestosUsados","MEDIDAS"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table DateTableTemplate_237c8982-983f-464d-8c3c-f6cc5fa1a054
+ref table DimFecha
+ref table LocalDateTable_7aabe375-68a7-4805-aebf-6851cad74940
+ref table DimCliente
+ref table DimRepuesto
+ref table DimServicio
+ref table DimTecnico
+ref table DimVehiculo
+ref table FactOrdenesTrabajo
+ref table FactRepuestosUsados
+ref table MEDIDAS
 
 ref cultureInfo es-ES
 

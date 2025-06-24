@@ -1,7 +1,21 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "20250623_1137_Fondo_Minimalist26925947952783635.png",
+            "path": "20250623_1137_Fondo_Minimalist26925947952783635.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
     {
       "resourcePackage": {
         "disabled": false,
@@ -30,14 +44,105 @@
       "width": 1280.00
     },
     {
-      "config": "{}",
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'20250623_1137_Fondo Minimalista Taller_simple_compose_01jyexsh75fywvep5x56spcfbv.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"20250623_1137_Fondo_Minimalist26925947952783635.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"62D\"}}}}}]}}",
       "displayName": "Dash3-JL",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "544b7055d67a84869b7a",
       "ordinal": 2,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1fd05d72c3056140b6de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":360,\"y\":70,\"z\":1000,\"width\":366,\"height\":128,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.NUM_ORDERS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"},\"Name\":\"MEDIDAS.NUM_ORDERS\",\"NativeReferenceName\":\"NUM_ORDERS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 366.00,
+          "x": 360.00,
+          "y": 70.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"29959b40cb06198551d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":218,\"y\":0,\"z\":9000,\"width\":876,\"height\":70,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"DASHBOARD TALLER DE MECANICA\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Verdana\",\"fontSize\":\"32pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 876.00,
+          "x": 218.00,
+          "y": 0.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"2d099ead8ea7d4b53d1e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":530,\"z\":3000,\"width\":336,\"height\":190,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.BENEFICIO_MANTENIMIENTO\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_MANTENIMIENTO\"},\"Name\":\"MEDIDAS.BENEFICIO_MANTENIMIENTO\",\"NativeReferenceName\":\"BENEFICIO_MANTENIMIENTO\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_MANTENIMIENTO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 190.00,
+          "width": 336.00,
+          "x": 0.00,
+          "y": 530.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"3e199494c05ed5d4a2a6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":198,\"z\":2000,\"width\":404,\"height\":332,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Año\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.sum_of_sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Año\",\"NativeReferenceName\":\"Recuento de Jerarquía de fechas Año\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum_of_sales\"},\"Name\":\"MEDIDAS.sum_of_sales\",\"NativeReferenceName\":\"sum_of_sales\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"65D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 332.00,
+          "width": 404.00,
+          "x": 10.00,
+          "y": 198.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3f848f787bee79479245\",\"layouts\":[{\"id\":0,\"position\":{\"x\":428,\"y\":198,\"z\":6000,\"width\":644,\"height\":332,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Mes\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.BENEFICIO_ELECTRICO\"},{\"queryRef\":\"MEDIDAS.BENEFICIO_MANTENIMIENTO\"},{\"queryRef\":\"MEDIDAS.BENEFICIO_REPARACION\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Mes\",\"NativeReferenceName\":\"Fecha Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_ELECTRICO\"},\"Name\":\"MEDIDAS.BENEFICIO_ELECTRICO\",\"NativeReferenceName\":\"BENEFICIO_ELECTRICO\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_MANTENIMIENTO\"},\"Name\":\"MEDIDAS.BENEFICIO_MANTENIMIENTO\",\"NativeReferenceName\":\"BENEFICIO_MANTENIMIENTO\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_REPARACION\"},\"Name\":\"MEDIDAS.BENEFICIO_REPARACION\",\"NativeReferenceName\":\"BENEFICIO_REPARACION\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"65D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 332.00,
+          "width": 644.00,
+          "x": 428.00,
+          "y": 198.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4f1e0f42936944e360b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1086,\"y\":244,\"z\":7000,\"width\":194,\"height\":232,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimServicio.Categoria\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"DimServicio.Categoria\",\"NativeReferenceName\":\"Categoria\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"60D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 232.00,
+          "width": 194.00,
+          "x": 1086.00,
+          "y": 244.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5c3ecdb5b4c7b30a4e07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":530,\"z\":4000,\"width\":372,\"height\":190,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.BENEFICIO_REPARACION\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_REPARACION\"},\"Name\":\"MEDIDAS.BENEFICIO_REPARACION\",\"NativeReferenceName\":\"BENEFICIO_REPARACION\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_REPARACION\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 190.00,
+          "width": 372.00,
+          "x": 336.00,
+          "y": 530.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6ba9081b0a5abb6e5b2a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":708,\"y\":530,\"z\":5000,\"width\":350,\"height\":190,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.BENEFICIO_ELECTRICO\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_ELECTRICO\"},\"Name\":\"MEDIDAS.BENEFICIO_ELECTRICO\",\"NativeReferenceName\":\"BENEFICIO_ELECTRICO\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BENEFICIO_ELECTRICO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 190.00,
+          "width": 350.00,
+          "x": 708.00,
+          "y": 530.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a54e28ded3d7096aa809\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1086,\"y\":504,\"z\":8000,\"width\":194,\"height\":190,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Trimestre\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Trimestre\"},\"Name\":\"DimFecha.Fecha.Variación.Jerarquía de fechas.Trimestre\",\"NativeReferenceName\":\"Fecha Trimestre\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"65D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 190.00,
+          "width": 194.00,
+          "x": 1086.00,
+          "y": 504.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"f1a3d00ca7ab68266ed4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":70,\"z\":0,\"width\":360,\"height\":128,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.sum_of_sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum_of_sales\"},\"Name\":\"MEDIDAS.sum_of_sales\",\"NativeReferenceName\":\"sum_of_sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum_of_sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.00,
+          "width": 360.00,
+          "x": 0.00,
+          "y": 70.00,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     },
     {
@@ -48,7 +153,62 @@
       "height": 720.00,
       "name": "66fa8e0a1b0d4c57c12d",
       "ordinal": 1,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0e0c28d8cc5a6301d505\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1074,\"y\":108,\"z\":4001,\"width\":206,\"height\":612,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimVehiculo.Marca\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Marca\"},\"Name\":\"DimVehiculo.Marca\",\"NativeReferenceName\":\"Marca\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 612.00,
+          "width": 206.00,
+          "x": 1074.00,
+          "y": 108.00,
+          "z": 4001.00
+        },
+        {
+          "config": "{\"name\":\"2fa9d1769c0776100560\",\"layouts\":[{\"id\":0,\"position\":{\"x\":460,\"y\":272,\"z\":2000,\"width\":532,\"height\":228,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimServicio.Categoria\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(FactOrdenesTrabajo.CostoTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"DimServicio.Categoria\",\"NativeReferenceName\":\"Categoria\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0},\"Name\":\"Sum(FactOrdenesTrabajo.CostoTotal)\",\"NativeReferenceName\":\"Suma de CostoTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 228.00,
+          "width": 532.00,
+          "x": 460.00,
+          "y": 272.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"45fcced02175745d9497\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":256.25,\"z\":3000,\"width\":401.25,\"height\":257.5,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DimTecnico.NombreTecnico\",\"active\":true}],\"Values\":[{\"queryRef\":\"MEDIDAS.EFICIENCIA_TECNICOS\"},{\"queryRef\":\"MEDIDAS.RANK_TECNICOS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimTecnico\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreTecnico\"},\"Name\":\"DimTecnico.NombreTecnico\",\"NativeReferenceName\":\"NombreTecnico\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"EFICIENCIA_TECNICOS\"},\"Name\":\"MEDIDAS.EFICIENCIA_TECNICOS\",\"NativeReferenceName\":\"EFICIENCIA_TECNICOS\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RANK_TECNICOS\"},\"Name\":\"MEDIDAS.RANK_TECNICOS\",\"NativeReferenceName\":\"RANK_TECNICOS\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RANK_TECNICOS\"}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 257.50,
+          "width": 401.25,
+          "x": 0.00,
+          "y": 256.25,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"609628a0154d1e1870be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":523.75,\"z\":4000,\"width\":1052.5,\"height\":196.25,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MEDIDAS.sum_of_sales\"}],\"Category\":[{\"queryRef\":\"DimVehiculo.Marca\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum_of_sales\"},\"Name\":\"MEDIDAS.sum_of_sales\",\"NativeReferenceName\":\"sum_of_sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Marca\"},\"Name\":\"DimVehiculo.Marca\",\"NativeReferenceName\":\"Marca\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum_of_sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.25,
+          "width": 1052.50,
+          "x": 0.00,
+          "y": 523.75,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7f66743d17d25ba9104b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":280,\"y\":100,\"z\":1000,\"width\":280,\"height\":158,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.NUM_TECNICOS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_TECNICOS\"},\"Name\":\"MEDIDAS.NUM_TECNICOS\",\"NativeReferenceName\":\"NUM_TECNICOS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_TECNICOS\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 158.00,
+          "width": 280.00,
+          "x": 280.00,
+          "y": 100.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"de93d656bccb25086028\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":100,\"z\":0,\"width\":280,\"height\":158,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.ORDENES_COMPLETAS_PORCENTAJE\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_COMPLETAS_PORCENTAJE\"},\"Name\":\"MEDIDAS.ORDENES_COMPLETAS_PORCENTAJE\",\"NativeReferenceName\":\"ORDENES_COMPLETAS_PORCENTAJE\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_COMPLETAS_PORCENTAJE\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 158.00,
+          "width": 280.00,
+          "x": 0.00,
+          "y": 100.00,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     },
     {
