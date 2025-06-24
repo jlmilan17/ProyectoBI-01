@@ -1,0 +1,63 @@
+table DimCliente
+	lineageTag: 1d58dae9-f114-4ad1-a3bd-6af1a468d82c
+
+	column IdClienteDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 26a6a099-9bb5-4ffd-bf67-f0e12117499b
+		summarizeBy: none
+		sourceColumn: IdClienteDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreCliente
+		dataType: string
+		lineageTag: c5211aa5-486f-462a-a548-e829f432fc9d
+		summarizeBy: none
+		sourceColumn: NombreCliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoCliente
+		dataType: string
+		lineageTag: 2b74299e-4558-4a06-9005-e94a7c315105
+		summarizeBy: none
+		sourceColumn: TipoCliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Telefono
+		dataType: string
+		lineageTag: 88f7c9ed-ef40-45b9-915c-26664ad0efcd
+		summarizeBy: none
+		sourceColumn: Telefono
+
+		annotation SummarizationSetBy = Automatic
+
+	column Correo
+		dataType: string
+		lineageTag: 1b53ea36-a864-42c0-82c3-944c87d327b3
+		summarizeBy: none
+		sourceColumn: Correo
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdClienteNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 988a3beb-4027-4e85-a79d-b94515e8ffc6
+		summarizeBy: none
+		sourceColumn: IdClienteNT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCliente = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_DimCliente = TallerDW{[Schema="dbo",Item="DimCliente"]}[Data]
+				in
+				    dbo_DimCliente
+

@@ -1,0 +1,121 @@
+table FactOrdenesTrabajo
+	lineageTag: 6d245a5f-b3ff-4466-868a-963236bca25e
+
+	column IdOrdenTrabajoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: f643428e-3a3f-4f5c-bb98-1fbcf2473986
+		summarizeBy: none
+		sourceColumn: IdOrdenTrabajoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdTecnicoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 97a70223-09d4-476d-8024-fa7cc2053e51
+		summarizeBy: none
+		sourceColumn: IdTecnicoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdServicioDW
+		dataType: int64
+		formatString: 0
+		lineageTag: f1d06d24-f4e6-489b-bc60-ed3e4dab8368
+		summarizeBy: none
+		sourceColumn: IdServicioDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdVehiculoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: cc5fdef4-9bfd-4963-a1e4-8001715967c9
+		summarizeBy: none
+		sourceColumn: IdVehiculoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdClienteDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 628c2ea6-42b3-48d3-bcc9-2513cc9be492
+		summarizeBy: none
+		sourceColumn: IdClienteDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdFechaEntradaDW
+		dataType: int64
+		formatString: 0
+		lineageTag: 0fe3a3d3-de55-408e-82a8-b20f7ea98963
+		summarizeBy: none
+		sourceColumn: IdFechaEntradaDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdFechaSalidaDW
+		dataType: int64
+		formatString: 0
+		lineageTag: a1e02716-8db8-48dd-b49d-f1e5e9ec45d0
+		summarizeBy: sum
+		sourceColumn: IdFechaSalidaDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column TiempoEstimado
+		dataType: int64
+		formatString: 0
+		lineageTag: 496c9671-3362-474f-826b-e4737955c5d7
+		summarizeBy: sum
+		sourceColumn: TiempoEstimado
+
+		annotation SummarizationSetBy = Automatic
+
+	column TiempoReal
+		dataType: int64
+		formatString: 0
+		lineageTag: 83ac5634-ee4b-4e9e-9a34-34c0483344d3
+		summarizeBy: sum
+		sourceColumn: TiempoReal
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostoTotal
+		dataType: double
+		lineageTag: 5327fda7-a011-44f4-84a2-bb1c632061d2
+		summarizeBy: sum
+		sourceColumn: CostoTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Estado
+		dataType: string
+		lineageTag: 2ec476d1-112b-4356-9045-0eea7ff15ffb
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdOrdenNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a6f748c-4268-4616-b691-606551ccff33
+		summarizeBy: sum
+		sourceColumn: IdOrdenNT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactOrdenesTrabajo = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_FactOrdenesTrabajo = TallerDW{[Schema="dbo",Item="FactOrdenesTrabajo"]}[Data]
+				in
+				    dbo_FactOrdenesTrabajo
+

@@ -1,0 +1,72 @@
+table DimVehiculo
+	lineageTag: 58ce5096-dc9e-470d-90fd-9a38255338d9
+
+	column IdVehiculoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: d9cfa2c8-4f35-46f6-ad84-69c1826899ba
+		summarizeBy: none
+		sourceColumn: IdVehiculoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column Placa
+		dataType: string
+		lineageTag: 8912d684-ac5e-4901-85ca-114e78126c87
+		summarizeBy: none
+		sourceColumn: Placa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marca
+		dataType: string
+		lineageTag: 61df4e5b-c513-4078-a674-76f3c8c5b4cc
+		summarizeBy: none
+		sourceColumn: Marca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modelo
+		dataType: string
+		lineageTag: 0c170774-5d11-4516-8a0e-f89dfd9dc56f
+		summarizeBy: none
+		sourceColumn: Modelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: dd46ae05-770e-4362-b6d0-cf8cb8886846
+		summarizeBy: none
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 7b5f6899-c29d-4430-a324-e40ea5ca5e85
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdVehiculoNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ac010f4-aaed-4a6c-b4d5-3e1410a1daab
+		summarizeBy: none
+		sourceColumn: IdVehiculoNT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimVehiculo = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_DimVehiculo = TallerDW{[Schema="dbo",Item="DimVehiculo"]}[Data]
+				in
+				    dbo_DimVehiculo
+

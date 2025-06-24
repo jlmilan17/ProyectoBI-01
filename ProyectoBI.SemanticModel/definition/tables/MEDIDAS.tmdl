@@ -1,0 +1,76 @@
+table MEDIDAS
+	lineageTag: 9c3d27fe-fc08-443e-a601-0d4371e12ad2
+
+	measure sum_of_sales = SUM(FactRepuestosUsados[CostoTotal])
+		lineageTag: 07d20019-5c35-4b3a-9eeb-5cfce9afa735
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure NUM_ORDERS = COUNTROWS(FactOrdenesTrabajo)
+		formatString: 0
+		lineageTag: b8777fb5-3df6-441f-a00a-5eebc223080c
+
+	measure BENEFICIO_MANTENIMIENTO = CALCULATE(SUM(FactRepuestosUsados[CostoTotal]), DimServicio[Categoria] = "Mantenimiento")
+		lineageTag: 5f683512-f1e4-42fb-a358-cfbe4e1e13a6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure BENEFICIO_REPARACION = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Reparación")
+		lineageTag: c282b3eb-89b7-4bd3-b3be-2cdc67d55550
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure BENEFICIO_ELECTRICO = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Eléctrico")
+		lineageTag: e6e9e136-6307-49d8-8e30-d51ea8311d1c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure ORDENES_COMPLETADAS = CALCULATE(COUNTROWS(FactOrdenesTrabajo), FactOrdenesTrabajo[Estado] = "Terminado")
+		formatString: 0
+		lineageTag: 0d1aa70a-935b-41bd-bbcd-0be8e381a9ea
+
+	measure ORDENES_COMPLETAS_PORCENTAJE = [ORDENES_COMPLETADAS]/[NUM_ORDERS]
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 4d06440d-87ab-4093-9667-f4ab09dfce9f
+
+	measure NUM_TECNICOS = COUNTROWS(DimTecnico)
+		formatString: 0
+		lineageTag: 32cf667d-403e-4e5d-8450-9505c52409dd
+
+	measure EFICIENCIA_TECNICOS = ```
+			
+			DIVIDE(
+			    CALCULATE( AVERAGE( FactOrdenesTrabajo[TiempoEstimado] ) ),
+			    CALCULATE( AVERAGE( FactOrdenesTrabajo[TiempoReal] ) )
+			)
+			
+			```
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 4d9721da-ef09-4422-8e8a-60f401e2a460
+
+	measure RANK_TECNICOS = ```
+			
+			RANKX(
+			    ALL( DimTecnico[NombreTecnico] ),
+			    [EFICIENCIA_TECNICOS],
+			    ,
+			    DESC,
+			    DENSE
+			)
+			
+			```
+		formatString: 0
+		lineageTag: cbe73dce-7398-4cdc-89d4-747ffb338177
+
+	partition MEDIDAS = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

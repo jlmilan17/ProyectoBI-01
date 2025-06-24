@@ -1,0 +1,63 @@
+table DimTecnico
+	lineageTag: 526a8d5b-820d-4f2b-a874-794483148c73
+
+	column IdTecnicoDW
+		dataType: int64
+		formatString: 0
+		lineageTag: c76de1f5-8164-4e8e-b236-b05bd65ea009
+		summarizeBy: none
+		sourceColumn: IdTecnicoDW
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreTecnico
+		dataType: string
+		lineageTag: 4b51028a-176b-4952-a84e-76cabf1b9033
+		summarizeBy: none
+		sourceColumn: NombreTecnico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Especialidad
+		dataType: string
+		lineageTag: 6ce94325-06ac-4b92-92e3-f23d89a74eb3
+		summarizeBy: none
+		sourceColumn: Especialidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column NivelExperiencia
+		dataType: string
+		lineageTag: 50a23c98-c0c6-4758-8b5f-79527156315f
+		summarizeBy: none
+		sourceColumn: NivelExperiencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 12ac6b02-e7ae-4ac3-89a4-100ed320ff14
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdTecnicoNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 53454cf9-b944-436b-b324-86aedb286e50
+		summarizeBy: none
+		sourceColumn: IdTecnicoNT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimTecnico = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("localhost"),
+				    TallerDW = Origen{[Name="TallerDW"]}[Data],
+				    dbo_DimTecnico = TallerDW{[Schema="dbo",Item="DimTecnico"]}[Data]
+				in
+				    dbo_DimTecnico
+
