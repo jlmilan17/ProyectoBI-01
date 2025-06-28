@@ -986,6 +986,16 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "Servicio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Servicio realizado": {
 			            "State": "Suggested",
 			            "Source": {
@@ -1273,6 +1283,16 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tecnico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2704,6 +2724,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.591
 			          }
+			        },
+			        {
+			          "Ventas Totales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2827,6 +2857,26 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.485
 			          }
+			        },
+			        {
+			          "Ordenes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ordenes Totales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2849,6 +2899,16 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Mantenimiento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2873,6 +2933,26 @@ cultureInfo es-ES
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Reparación": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Beneficio Cat. Reparación": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2895,6 +2975,26 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Eléctrico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Beneficio Cat. Eléctrico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2942,6 +3042,16 @@ cultureInfo es-ES
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Ordenes Completadas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2975,6 +3085,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Cantidad de Tecnicos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2998,6 +3118,16 @@ cultureInfo es-ES
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Eficiencia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3020,6 +3150,516 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ranking": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cliente.total_ordenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCliente",
+			          "ConceptualProperty": "TotalOrdenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total ordenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalOrdenes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate ordene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall ordene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cliente.mostrar_ordenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCliente",
+			          "ConceptualProperty": "MostrarOrdenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar ordenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarOrdenes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_enproceso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "ORDENES_ENPROCESO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes enproceso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ORDENES_ENPROCESO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ordenes en proceso": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_enproceso_porcentaje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "ORDENES_ENPROCESO_PORCENTAJE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes enproceso porcentaje": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ORDENES_ENPROCESO_PORCENTAJE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ordenes En Proceso": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_pendiente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "ORDENES_PENDIENTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes pendiente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ORDENES_PENDIENTE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ordenes pendientes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_pendiente_porcentaje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "ORDENES_PENDIENTE_PORCENTAJE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes pendiente porcentaje": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ORDENES_PENDIENTE_PORCENTAJE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ordenes Pendientes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.beneficio_alineacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "BENEFICIO_ALINEACION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beneficio alineacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BENEFICIO_ALINEACION": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Alineación": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.beneficio_inspeccion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "BENEFICIO_INSPECCION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beneficio inspeccion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BENEFICIO_INSPECCION": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Inspección": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.beneficio_revision": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "BENEFICIO_REVISION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beneficio revision": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BENEFICIO_REVISION": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "beneficio amendment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio reconsideration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio adjustment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio correction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio improvement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "beneficio change": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Revisión": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.beneficio_suspension": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "BENEFICIO_SUSPENSION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "beneficio suspension": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BENEFICIO_SUSPENSION": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "beneficio postponement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio interruption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio deferral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio holdup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio deferment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "beneficio check": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "beneficio delay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "beneficio pause": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Suspensión": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3708,6 +4348,336 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_fechas_have_fact_ordenes_trabajos"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_beneficio_suspension": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.beneficio_suspension": {
+			          "Target": {
+			            "Entity": "medida.beneficio_suspension"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.beneficio_suspension"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_beneficio_suspension"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_beneficio_revision": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.beneficio_revision": {
+			          "Target": {
+			            "Entity": "medida.beneficio_revision"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.beneficio_revision"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_beneficio_revision"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_beneficio_inspeccion": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.beneficio_inspeccion": {
+			          "Target": {
+			            "Entity": "medida.beneficio_inspeccion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.beneficio_inspeccion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_beneficio_inspeccion"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_beneficio_alineacion": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.beneficio_alineacion": {
+			          "Target": {
+			            "Entity": "medida.beneficio_alineacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.beneficio_alineacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_beneficio_alineacion"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_ordenes_pendiente_porcentaje": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.ordenes_pendiente_porcentaje": {
+			          "Target": {
+			            "Entity": "medida.ordenes_pendiente_porcentaje"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_pendiente_porcentaje"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_ordenes_pendiente_porcentaje"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_ordenes_pendiente": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.ordenes_pendiente": {
+			          "Target": {
+			            "Entity": "medida.ordenes_pendiente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_pendiente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_ordenes_pendiente"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_ordenes_enproceso_porcentaje": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.ordenes_enproceso_porcentaje": {
+			          "Target": {
+			            "Entity": "medida.ordenes_enproceso_porcentaje"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_enproceso_porcentaje"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_ordenes_enproceso_porcentaje"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_ordenes_enproceso": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.ordenes_enproceso": {
+			          "Target": {
+			            "Entity": "medida.ordenes_enproceso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_enproceso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_ordenes_enproceso"
+			        }
+			      ]
+			    },
+			    "dim_cliente_has_mostrar_ordenes": {
+			      "Binding": {
+			        "ConceptualEntity": "DimCliente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_cliente": {
+			          "Target": {
+			            "Entity": "dim_cliente"
+			          }
+			        },
+			        "dim_cliente.mostrar_ordenes": {
+			          "Target": {
+			            "Entity": "dim_cliente.mostrar_ordenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "dim_cliente.mostrar_ordenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_clientes_have_mostrar_ordenes"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_dim_cliente_total_ordenes": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "dim_cliente.total_ordenes": {
+			          "Target": {
+			            "Entity": "dim_cliente.total_ordenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "dim_cliente.total_ordenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_total_ordenes"
 			        }
 			      ]
 			    },
@@ -5661,7 +6631,7 @@ cultureInfo es-ES
 			  },
 			  "Agents": {
 			    "Internal": {
-			      "Version": "1.1.0"
+			      "Version": "1.0.0"
 			    }
 			  }
 			}

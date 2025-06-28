@@ -68,19 +68,19 @@ table FactOrdenesTrabajo
 		dataType: int64
 		formatString: 0
 		lineageTag: 496c9671-3362-474f-826b-e4737955c5d7
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: TiempoEstimado
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column TiempoReal
 		dataType: int64
 		formatString: 0
 		lineageTag: 83ac5634-ee4b-4e9e-9a34-34c0483344d3
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: TiempoReal
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column CostoTotal
 		dataType: double
