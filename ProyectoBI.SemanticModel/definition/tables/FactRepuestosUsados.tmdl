@@ -32,18 +32,18 @@ table FactRepuestosUsados
 		dataType: int64
 		formatString: 0
 		lineageTag: b43ae987-ddac-421a-8934-782db53847de
-		summarizeBy: sum
+		summarizeBy: average
 		sourceColumn: CantidadUtilizada
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column CostoUnitario
 		dataType: double
 		lineageTag: 278fd811-4f1b-439a-a13d-43d247420156
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: CostoUnitario
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
