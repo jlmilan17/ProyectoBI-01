@@ -62,42 +62,6 @@ table MEDIDAS
 		formatString: 0
 		lineageTag: cbe73dce-7398-4cdc-89d4-747ffb338177
 
-	measure BENEFICIO_ALINEACION = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Alineación")
-		lineageTag: 49e4bd0c-b891-4e18-be8f-30198a81380f
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure BENEFICIO_INSPECCION = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Inspección")
-		lineageTag: 2a84516f-db76-4783-83b7-5159b5331fe7
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure BENEFICIO_REVISION = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Revisión")
-		lineageTag: 8ef343aa-3a88-47ff-abe8-53368f0b2b0e
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure BENEFICIO_SUSPENSION = CALCULATE(SUM(FactOrdenesTrabajo[CostoTotal]), DimServicio[Categoria] = "Suspensión")
-		lineageTag: 5ab913b1-608b-4ef4-9fa9-18192a4fe3b8
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure ORDENES_ENPROCESO = CALCULATE(COUNTROWS(FactOrdenesTrabajo), FactOrdenesTrabajo[Estado] = "En Proceso")
-		formatString: 0
-		lineageTag: a7c329a5-defd-4cd7-b783-c1fc50aaa026
-
-	measure ORDENES_PENDIENTES = CALCULATE(COUNTROWS(FactOrdenesTrabajo), FactOrdenesTrabajo[Estado] = "Pendiente")
-		formatString: 0
-		lineageTag: 3d9f8ff5-0fd4-48fa-952c-4353a86885ff
-
-	measure ORDENES_PENDIENTE_PORCENTAJE = [ORDENES_PENDIENTES]/[NUM_ORDERS]
-		formatString: #,0.00\ %;-#,0.00\ %;#,0.00\ %
-		lineageTag: 146dcc89-1bf6-483a-b843-1fede9412379
-
-	measure ORDENES_ENPROCES_PORCENTAJE = [ORDENES_ENPROCESO]/[NUM_ORDERS]
-		formatString: 0.00\ %;-0.00\ %;0.00\ %
-		lineageTag: c7c8138c-0eaf-4701-afba-7432ac6aa89e
-
 	partition MEDIDAS = m
 		mode: import
 		source =
