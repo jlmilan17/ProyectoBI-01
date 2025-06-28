@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 964.36778101427808,
-        "y": 74.862891207749158
+        "x": 862.06896551724139,
+        "y": 1.379310365380912
       },
       "nodes": [
         {
@@ -124,18 +124,6 @@
             "width": 234
           },
           "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 1872.1541106813404,
-            "y": 350.75840951388614
-          },
-          "nodeIndex": "FilteredTecnicos",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 0
         }
       ],
       "name": "Todas las tablas",
