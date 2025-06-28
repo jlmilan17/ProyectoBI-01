@@ -9,30 +9,6 @@ table DimCliente
 		formatString: 0
 		lineageTag: 8e163033-95ae-4a02-b09a-edf844abdb9d
 
-	measure MostrarOrdenes = ```
-			
-			VAR TopTecnicos =
-			    TOPN(
-			        8,
-			        VALUES(DimTecnico[NombreTecnico]),
-			        [TotalOrdenes],
-			        DESC
-			    )
-			RETURN
-			    IF (
-			        ISFILTERED(DimTecnico[NombreTecnico]),
-			        [TotalOrdenes],
-			        IF (
-			            CONTAINS(TopTecnicos, DimTecnico[NombreTecnico], SELECTEDVALUE(DimTecnico[NombreTecnico])),
-			            [TotalOrdenes],
-			            BLANK()
-			        )
-			    )
-			
-			```
-		formatString: 0
-		lineageTag: 244f16ab-7ef3-4831-8fd1-3899d4fff696
-
 	column IdClienteDW
 		dataType: int64
 		formatString: 0

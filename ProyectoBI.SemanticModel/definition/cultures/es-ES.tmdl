@@ -1004,6 +1004,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Tipo de servicio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1287,6 +1297,16 @@ cultureInfo es-ES
 			        },
 			        {
 			          "Tecnico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Tecnicos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3207,29 +3227,6 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "dim_cliente.mostrar_ordenes": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DimCliente",
-			          "ConceptualProperty": "MostrarOrdenes"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mostrar ordenes": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "MostrarOrdenes": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
 			    "medida.ordenes_enproceso": {
 			      "Definition": {
 			        "Binding": {
@@ -3663,141 +3660,207 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "medida.mostrar_por_tecnico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "MostrarPorTecnico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar por tecnico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarPorTecnico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rendimiento_tecnico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "RendimientoTecnico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rendimiento tecnico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RendimientoTecnico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_por_servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "OrdenesPorServicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes por servicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OrdenesPorServicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ordenes_terminadas_por_tecnico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "OrdenesTerminadasPorTecnico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordenes terminadas por tecnico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OrdenesTerminadasPorTecnico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.top_8_tecnicos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "Top8Tecnicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 8 tecnicos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Top8Tecnicos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "best 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "first 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "leading 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "maximum 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "peak 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "upper 8 tecnico": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "medida.grafico_tecnicos_smart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MEDIDAS",
+			          "ConceptualProperty": "GraficoTecnicosSmart"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grafico tecnicos smart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "GraficoTecnicosSmart": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "dim_fecha_fecha_me_has_dim_fecha_fecha_día": {
-			      "Binding": {
-			        "ConceptualEntity": "DimFecha"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_fecha.fecha.me": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.me"
-			          }
-			        },
-			        "dim_fecha.fecha.día": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.día"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me"
-			        }
-			      ]
-			    },
-			    "dim_fecha_fecha_trimestre_has_dim_fecha_fecha_me": {
-			      "Binding": {
-			        "ConceptualEntity": "DimFecha"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_fecha.fecha.trimestre": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.trimestre"
-			          }
-			        },
-			        "dim_fecha.fecha.me": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres"
-			        }
-			      ]
-			    },
 			    "dim_fecha_fecha_año_has_dim_fecha_fecha_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "DimFecha"
@@ -4351,6 +4414,204 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "medida_has_grafico_tecnicos_smart": {
+			      "Binding": {
+			        "ConceptualEntity": "MEDIDAS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.grafico_tecnicos_smart": {
+			          "Target": {
+			            "Entity": "medida.grafico_tecnicos_smart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.grafico_tecnicos_smart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_grafico_tecnicos_smart"
+			        }
+			      ]
+			    },
+			    "medida_has_top_8_tecnicos": {
+			      "Binding": {
+			        "ConceptualEntity": "MEDIDAS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.top_8_tecnicos": {
+			          "Target": {
+			            "Entity": "medida.top_8_tecnicos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.top_8_tecnicos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_top_8_tecnicos"
+			        }
+			      ]
+			    },
+			    "medida_has_ordenes_terminadas_por_tecnico": {
+			      "Binding": {
+			        "ConceptualEntity": "MEDIDAS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.ordenes_terminadas_por_tecnico": {
+			          "Target": {
+			            "Entity": "medida.ordenes_terminadas_por_tecnico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_terminadas_por_tecnico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_ordenes_terminadas_por_tecnico"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_ordenes_por_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.ordenes_por_servicio": {
+			          "Target": {
+			            "Entity": "medida.ordenes_por_servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.ordenes_por_servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_ordenes_por_servicio"
+			        }
+			      ]
+			    },
+			    "fact_ordenes_trabajo_has_medida_rendimiento_tecnico": {
+			      "Binding": {
+			        "ConceptualEntity": "FactOrdenesTrabajo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ordenes_trabajo": {
+			          "Target": {
+			            "Entity": "fact_ordenes_trabajo"
+			          }
+			        },
+			        "medida.rendimiento_tecnico": {
+			          "Target": {
+			            "Entity": "medida.rendimiento_tecnico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ordenes_trabajo"
+			            },
+			            "Object": {
+			              "Role": "medida.rendimiento_tecnico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ordenes_trabajos_have_rendimiento_tecnico"
+			        }
+			      ]
+			    },
+			    "medida_has_mostrar_por_tecnico": {
+			      "Binding": {
+			        "ConceptualEntity": "MEDIDAS"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.mostrar_por_tecnico": {
+			          "Target": {
+			            "Entity": "medida.mostrar_por_tecnico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.mostrar_por_tecnico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_mostrar_por_tecnico"
+			        }
+			      ]
+			    },
 			    "fact_ordenes_trabajo_has_medida_beneficio_suspension": {
 			      "Binding": {
 			        "ConceptualEntity": "FactOrdenesTrabajo"
@@ -4612,39 +4873,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_ordenes_trabajos_have_ordenes_enproceso"
-			        }
-			      ]
-			    },
-			    "dim_cliente_has_mostrar_ordenes": {
-			      "Binding": {
-			        "ConceptualEntity": "DimCliente"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_cliente": {
-			          "Target": {
-			            "Entity": "dim_cliente"
-			          }
-			        },
-			        "dim_cliente.mostrar_ordenes": {
-			          "Target": {
-			            "Entity": "dim_cliente.mostrar_ordenes"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_cliente"
-			            },
-			            "Object": {
-			              "Role": "dim_cliente.mostrar_ordenes"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_clientes_have_mostrar_ordenes"
 			        }
 			      ]
 			    },
@@ -6627,11 +6855,143 @@ cultureInfo es-ES
 			          "ID": "dim_fechas_have_id_fecha_DWs"
 			        }
 			      ]
+			    },
+			    "dim_fecha_fecha_trimestre_has_dim_fecha_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "DimFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.trimestre"
+			          }
+			        },
+			        "dim_fecha.fecha.me": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dim_fecha_fecha_me_has_dim_fecha_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "DimFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha.fecha.me": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.me"
+			          }
+			        },
+			        "dim_fecha.fecha.día": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.día"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
 			    }
 			  },
 			  "Agents": {
 			    "Internal": {
-			      "Version": "1.0.0"
+			      "Version": "1.1.0"
 			    }
 			  }
 			}

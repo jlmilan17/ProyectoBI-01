@@ -3,9 +3,4 @@
 
 // Seleccione "Ejecutar" para probar esta consulta DAX de ejemplo.
 
-HaySeleccionTecnico :=
-IF (
-    ISFILTERED(DimTecnico[NombreTecnico]),
-    TRUE(),
-    FALSE()
-)
+

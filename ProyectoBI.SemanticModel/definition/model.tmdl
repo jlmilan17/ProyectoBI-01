@@ -8,7 +8,7 @@ model Model
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+annotation PBIDesktopVersion = 2.144.1155.0 (25.06)+46435b07013d2a234d7fd007083a9e70b8e79f1c
 
 annotation PBI_QueryOrder = ["DimFecha","DimCliente","DimRepuesto","DimServicio","DimTecnico","DimVehiculo","FactOrdenesTrabajo","FactRepuestosUsados","MEDIDAS"]
 
