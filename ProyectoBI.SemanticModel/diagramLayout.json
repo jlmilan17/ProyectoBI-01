@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 474.48277966729529,
-        "y": 0
+        "x": 964.36778101427808,
+        "y": 74.862891207749158
       },
       "nodes": [
         {
           "location": {
             "x": 1267.2636931917211,
-            "y": 669.99874791928175
+            "y": 688.79392569050788
           },
           "nodeIndex": "DimCliente",
           "nodeLineageTag": "1d58dae9-f114-4ad1-a3bd-6af1a468d82c",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 889.373670999048,
-            "y": 261.77654227245188
+            "y": 280.571720043678
           },
           "nodeIndex": "DimFecha",
           "nodeLineageTag": "f559fc6d-9dfa-46d4-83ea-b28dcef2a6ed",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 2062.1622257428789,
-            "y": 148.96969076583142
+            "y": 167.76486853705754
           },
           "nodeIndex": "DimRepuesto",
           "nodeLineageTag": "f267b7c9-8a3f-4f1a-b1b1-9f88d58af409",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 1005.5139869119776,
-            "y": 30.383635414264518
+            "y": 49.17881318549064
           },
           "nodeIndex": "DimServicio",
           "nodeLineageTag": "2d7e8521-0839-4287-b229-158fc619dcf2",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 1617.6637911735277,
-            "y": 604.808055714486
+            "y": 623.603233485712
           },
           "nodeIndex": "DimTecnico",
           "nodeLineageTag": "526a8d5b-820d-4f2b-a874-794483148c73",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 1930.6356285088978,
-            "y": 483.82352941176464
+            "y": 502.61870718299076
           },
           "nodeIndex": "DimVehiculo",
           "nodeLineageTag": "58ce5096-dc9e-470d-90fd-9a38255338d9",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 1358.1134135169636,
-            "y": 251.50373312315992
+            "y": 270.29891089438604
           },
           "nodeIndex": "FactOrdenesTrabajo",
           "nodeLineageTag": "6d245a5f-b3ff-4466-868a-963236bca25e",
@@ -102,7 +102,7 @@
         {
           "location": {
             "x": 1721.7268819882524,
-            "y": 15.036142216980892
+            "y": 33.831319988207014
           },
           "nodeIndex": "FactRepuestosUsados",
           "nodeLineageTag": "c756567a-40cf-4063-bac3-ea18d9b98bfb",
@@ -115,7 +115,7 @@
         {
           "location": {
             "x": 474.00811506153855,
-            "y": 600.99328087446611
+            "y": 619.78845864569212
           },
           "nodeIndex": "MEDIDAS",
           "nodeLineageTag": "9c3d27fe-fc08-443e-a601-0d4371e12ad2",
@@ -124,6 +124,18 @@
             "width": 234
           },
           "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1872.1541106813404,
+            "y": 350.75840951388614
+          },
+          "nodeIndex": "FilteredTecnicos",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas las tablas",
