@@ -98,6 +98,91 @@ table MEDIDAS
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure MostrarPorTecnico = ```
+			
+			IF(
+			    HASONEVALUE(DimTecnico[NombreTecnico]),
+			    1,
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a5faa63e-1190-4e68-a94d-adb1cca34297
+
+	measure RendimientoTecnico = ```
+			
+			CALCULATE(
+			    COUNTROWS(FactOrdenesTrabajo),
+			    FactOrdenesTrabajo[Estado] = "Terminado"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: aa9d5a3c-3cea-4fa1-8308-60c8877f958f
+
+	measure OrdenesPorServicio = ```
+			
+			COUNTROWS(FactOrdenesTrabajo)
+			
+			```
+		formatString: 0
+		lineageTag: 77d86d3c-6c16-4e3c-8235-8bb697e57054
+
+	measure OrdenesTerminadasPorTecnico = ```
+			
+			IF (
+			    NOT ISFILTERED(DimTecnico[NombreTecnico]),
+			    CALCULATE(
+			        COUNTROWS(FactOrdenesTrabajo),
+			        FactOrdenesTrabajo[Estado] = "Terminado"
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: c02bf74c-c8ff-4cdd-8ffd-1c3926cece50
+
+	measure Top8Tecnicos = ```
+			
+			VAR RankTecnico =
+			    RANKX(
+			        ALL(DimTecnico[NombreTecnico]),
+			        CALCULATE(COUNT(FactOrdenesTrabajo[IdOrdenTrabajoDW])),
+			        ,
+			        DESC
+			    )
+			RETURN
+			IF(
+			    RankTecnico <= 8,
+			    CALCULATE(
+			        COUNT(FactOrdenesTrabajo[IdOrdenTrabajoDW])
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: edcea721-97e6-4a3b-9561-5e4bd00eaa56
+
+	measure GraficoTecnicosSmart = ```
+			
+			VAR ConteoSeleccion =
+			    COUNTROWS(VALUES(DimTecnico[NombreTecnico]))
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ConteoSeleccion = 1, BLANK(),         -- Mostrar gráfico de servicios
+			    ConteoSeleccion > 1, 
+			        CALCULATE(COUNT(FactOrdenesTrabajo[IdOrdenTrabajoDW])),  -- Mostrar todos los técnicos
+			    CALCULATE(
+			        COUNT(FactOrdenesTrabajo[IdOrdenTrabajoDW])
+			    )  -- Mostrar Top 8 cuando no hay selección
+			)
+			
+			```
+		formatString: 0
+		lineageTag: e54b6354-623e-4d73-ad1a-52d7ecc75a27
+
 	partition MEDIDAS = m
 		mode: import
 		source =
