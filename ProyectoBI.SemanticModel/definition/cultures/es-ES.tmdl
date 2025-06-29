@@ -691,6 +691,16 @@ cultureInfo es-ES
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Categoria de Repuesto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3148,6 +3158,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Eficiencia Técnicos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3290,6 +3310,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Ordenes en proceso (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3349,6 +3379,16 @@ cultureInfo es-ES
 			        },
 			        {
 			          "Ordenes Pendientes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ordenes Pendientes (%)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3861,6 +3901,138 @@ cultureInfo es-ES
 			    }
 			  },
 			  "Relationships": {
+			    "dim_fecha_fecha_me_has_dim_fecha_fecha_día": {
+			      "Binding": {
+			        "ConceptualEntity": "DimFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha.fecha.me": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.me"
+			          }
+			        },
+			        "dim_fecha.fecha.día": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.día"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    },
+			    "dim_fecha_fecha_trimestre_has_dim_fecha_fecha_me": {
+			      "Binding": {
+			        "ConceptualEntity": "DimFecha"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha.fecha.trimestre": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.trimestre"
+			          }
+			        },
+			        "dim_fecha.fecha.me": {
+			          "Target": {
+			            "Entity": "dim_fecha.fecha.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_fecha.fecha.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_fecha.fecha.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
 			    "dim_fecha_fecha_año_has_dim_fecha_fecha_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "DimFecha"
@@ -6855,143 +7027,11 @@ cultureInfo es-ES
 			          "ID": "dim_fechas_have_id_fecha_DWs"
 			        }
 			      ]
-			    },
-			    "dim_fecha_fecha_trimestre_has_dim_fecha_fecha_me": {
-			      "Binding": {
-			        "ConceptualEntity": "DimFecha"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_fecha.fecha.trimestre": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.trimestre"
-			          }
-			        },
-			        "dim_fecha.fecha.me": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_fecha.fecha.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres"
-			        }
-			      ]
-			    },
-			    "dim_fecha_fecha_me_has_dim_fecha_fecha_día": {
-			      "Binding": {
-			        "ConceptualEntity": "DimFecha"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_fecha.fecha.me": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.me"
-			          }
-			        },
-			        "dim_fecha.fecha.día": {
-			          "Target": {
-			            "Entity": "dim_fecha.fecha.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.me"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.día"
-			            },
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_fecha.fecha.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_fecha.fecha.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me"
-			        }
-			      ]
 			    }
 			  },
 			  "Agents": {
 			    "Internal": {
-			      "Version": "1.1.0"
+			      "Version": "1.0.0"
 			    }
 			  }
 			}
