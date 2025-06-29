@@ -55,9 +55,12 @@ table DimTecnico
 		mode: import
 		source =
 				let
-				    Origen = Sql.Databases("localhost"),
-				    TallerDW = Origen{[Name="TallerDW"]}[Data],
-				    dbo_DimTecnico = TallerDW{[Schema="dbo",Item="DimTecnico"]}[Data]
+				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    dbo_DimTecnico = Origen{[Schema="dbo",Item="DimTecnico"]}[Data]
 				in
 				    dbo_DimTecnico
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
 
