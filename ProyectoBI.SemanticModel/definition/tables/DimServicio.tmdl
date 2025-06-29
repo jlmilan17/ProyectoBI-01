@@ -48,9 +48,12 @@ table DimServicio
 		mode: import
 		source =
 				let
-				    Origen = Sql.Databases("localhost"),
-				    TallerDW = Origen{[Name="TallerDW"]}[Data],
-				    dbo_DimServicio = TallerDW{[Schema="dbo",Item="DimServicio"]}[Data]
+				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    dbo_DimServicio = Origen{[Schema="dbo",Item="DimServicio"]}[Data]
 				in
 				    dbo_DimServicio
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
 
