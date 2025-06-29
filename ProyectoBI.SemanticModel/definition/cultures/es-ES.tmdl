@@ -240,6 +240,16 @@ cultureInfo es-ES
 			          "anio": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Año": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -333,6 +343,16 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Mes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2900,6 +2920,16 @@ cultureInfo es-ES
 			        },
 			        {
 			          "Ordenes Totales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Numero de Ordenes": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -7031,7 +7061,7 @@ cultureInfo es-ES
 			  },
 			  "Agents": {
 			    "Internal": {
-			      "Version": "1.0.0"
+			      "Version": "1.1.0"
 			    }
 			  }
 			}
