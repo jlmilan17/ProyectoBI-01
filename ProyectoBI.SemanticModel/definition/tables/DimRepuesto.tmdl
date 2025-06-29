@@ -58,12 +58,12 @@ table DimRepuesto
 		mode: import
 		source =
 				let
-				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    Origen = Sql.Database("localhost", "TallerDW"),
 				    dbo_DimRepuesto = Origen{[Schema="dbo",Item="DimRepuesto"]}[Data]
 				in
 				    dbo_DimRepuesto
 
 	annotation PBI_NavigationStepName = Navegación
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

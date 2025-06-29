@@ -63,12 +63,12 @@ table DimCliente
 		mode: import
 		source =
 				let
-				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    Origen = Sql.Database("localhost", "TallerDW"),
 				    dbo_DimCliente = Origen{[Schema="dbo",Item="DimCliente"]}[Data]
 				in
 				    dbo_DimCliente
 
 	annotation PBI_NavigationStepName = Navegación
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

@@ -64,12 +64,12 @@ table DimVehiculo
 		mode: import
 		source =
 				let
-				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    Origen = Sql.Database("localhost", "TallerDW"),
 				    dbo_DimVehiculo = Origen{[Schema="dbo",Item="DimVehiculo"]}[Data]
 				in
 				    dbo_DimVehiculo
 
 	annotation PBI_NavigationStepName = Navegación
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
