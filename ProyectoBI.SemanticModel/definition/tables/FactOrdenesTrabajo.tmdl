@@ -113,7 +113,7 @@ table FactOrdenesTrabajo
 		mode: import
 		source =
 				let
-				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    Origen = Sql.Database("localhost", "TallerDW"),
 				    dbo_FactOrdenesTrabajo = Origen{[Schema="dbo",Item="FactOrdenesTrabajo"]}[Data]
 				in
 				    dbo_FactOrdenesTrabajo

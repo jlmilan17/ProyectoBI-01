@@ -101,7 +101,7 @@ table DimFecha
 		mode: import
 		source =
 				let
-				    Origen = Sql.Database("localhost\SQLEXPRESS", "TallerDW"),
+				    Origen = Sql.Database("localhost", "TallerDW"),
 				    dbo_DimFecha = Origen{[Schema="dbo",Item="DimFecha"]}[Data]
 				in
 				    dbo_DimFecha
