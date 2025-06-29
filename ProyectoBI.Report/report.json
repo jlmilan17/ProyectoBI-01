@@ -1,6 +1,17 @@
 {
+<<<<<<< HEAD
+  "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":6,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+=======
   "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":7,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+>>>>>>> 653b2d30f32f2b629286be2cfa88365948e605a0
   "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "8cd939a6425ab99c823d",
+      "config": "{}",
+      "name": "eb0775024673d32c5459"
+    }
+  ],
   "resourcePackages": [
     {
       "resourcePackage": {
@@ -303,6 +314,126 @@
           "x": 73.29,
           "y": 384.36,
           "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dash2-GC",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1000.00,
+      "name": "3434ebccd25da87e03b5",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"14687a800a9ab35944c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":455.23719505239313,\"y\":80.10038622622753,\"z\":3000,\"width\":170.8808239492854,\"height\":124.15559865065266,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.ORDENES_ENPROCESO\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_ENPROCESO\"},\"Name\":\"MEDIDAS.ORDENES_ENPROCESO\",\"NativeReferenceName\":\"Ordenes en Proceso\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_ENPROCESO\"}}}]},\"columnProperties\":{\"MEDIDAS.ORDENES_ENPROCESO\":{\"displayName\":\"Ordenes en Proceso\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 124.16,
+          "width": 170.88,
+          "x": 455.24,
+          "y": 80.10,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"258a2e0a480bd259800c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":670.1732314261037,\"y\":81.43539266333133,\"z\":4000,\"width\":170.8808239492854,\"height\":122.82059221354888,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.ORDENES_PENDIENTE\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_PENDIENTE\"},\"Name\":\"MEDIDAS.ORDENES_PENDIENTE\",\"NativeReferenceName\":\"Ordenes Pendientes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_PENDIENTE\"}}}]},\"columnProperties\":{\"MEDIDAS.ORDENES_PENDIENTE\":{\"displayName\":\"Ordenes Pendientes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 122.82,
+          "width": 170.88,
+          "x": 670.17,
+          "y": 81.44,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"42fe759828144123cb02\",\"layouts\":[{\"id\":0,\"position\":{\"x\":874.2864265237442,\"y\":703.5772155054219,\"z\":11000,\"width\":405.2349495201296,\"height\":84.5568989156176,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimServicio.Categoria\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"DimServicio.Categoria\",\"NativeReferenceName\":\"Categoria\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 84.56,
+          "width": 405.23,
+          "x": 874.29,
+          "y": 703.58,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"585f0967e75dc04b0ae1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.144958245045494,\"y\":502.55515393244417,\"z\":9000,\"width\":446.71569238439486,\"height\":285.57896048859527,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MEDIDAS.RendimientoTecnico\"}],\"Category\":[{\"queryRef\":\"DimTecnico.NombreTecnico\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimTecnico\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RendimientoTecnico\"},\"Name\":\"MEDIDAS.RendimientoTecnico\",\"NativeReferenceName\":\"Rendimiento Tecnico\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreTecnico\"},\"Name\":\"DimTecnico.NombreTecnico\",\"NativeReferenceName\":\"Nombre Tecnico\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RendimientoTecnico\"}}}]},\"columnProperties\":{\"DimTecnico.NombreTecnico\":{\"displayName\":\"Nombre Tecnico\"},\"MEDIDAS.RendimientoTecnico\":{\"displayName\":\"Rendimiento Tecnico\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Rendimiento de Tecnicos'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 285.58,
+          "width": 446.72,
+          "x": 19.14,
+          "y": 502.56,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"6b7c5ce45029408d3c03\",\"layouts\":[{\"id\":0,\"position\":{\"x\":874.4292163029838,\"y\":81.43539266333133,\"z\":5000,\"width\":387.1518667600997,\"height\":285.69137754021153,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimServicio.Categoria\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.NUM_ORDERS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"DimServicio.Categoria\",\"NativeReferenceName\":\"Categoria\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"},\"Name\":\"MEDIDAS.NUM_ORDERS\",\"NativeReferenceName\":\"Numero de Ordenes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"}}}]},\"columnProperties\":{\"MEDIDAS.NUM_ORDERS\":{\"displayName\":\"Numero de Ordenes\",\"formatString\":\"0%;-0%;0%\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 285.69,
+          "width": 387.15,
+          "x": 874.43,
+          "y": 81.44,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"99eb77ac9a0e12c89232\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.69009011945309,\"y\":78.76537978912374,\"z\":1000,\"width\":170.8808239492854,\"height\":124.15559865065266,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.NUM_ORDERS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"},\"Name\":\"MEDIDAS.NUM_ORDERS\",\"NativeReferenceName\":\"Numero de Ordenes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"NUM_ORDERS\"}}}]},\"columnProperties\":{\"MEDIDAS.NUM_ORDERS\":{\"formatString\":\"0\",\"displayName\":\"Numero de Ordenes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 124.16,
+          "width": 170.88,
+          "x": 18.69,
+          "y": 78.77,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aeefc756d60b6085c387\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280.2407860274648,\"height\":52.15795794926708,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Producción de eficiencia en equipo (2024 - 2025)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 52.16,
+          "width": 1280.24,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"afded236273703a5a10b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":224.2810814334371,\"y\":80.10038622622753,\"z\":2000,\"width\":181.56087544611574,\"height\":124.15559865065266,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.ORDENES_COMPLETADAS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_COMPLETADAS\"},\"Name\":\"MEDIDAS.ORDENES_COMPLETADAS\",\"NativeReferenceName\":\"Ordenes Completadas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_COMPLETADAS\"}}}]},\"columnProperties\":{\"MEDIDAS.ORDENES_COMPLETADAS\":{\"displayName\":\"Ordenes Completadas\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 124.16,
+          "width": 181.56,
+          "x": 224.28,
+          "y": 80.10,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b29b75399c2ae559079a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":874.4292163029838,\"y\":624.7830125645747,\"z\":8000,\"width\":405.8419568795528,\"height\":77.43037335201994,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.Anio\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Anio\"},\"Name\":\"DimFecha.Anio\",\"NativeReferenceName\":\"Año\"}]},\"columnProperties\":{\"DimFecha.Anio\":{\"displayName\":\"Año\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Anio\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 77.43,
+          "width": 405.84,
+          "x": 874.43,
+          "y": 624.78,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d53504c29139b1c2b587\",\"layouts\":[{\"id\":0,\"position\":{\"x\":465.86065062944033,\"y\":499.36432755826996,\"z\":10000,\"width\":374.9220989654742,\"height\":288.76978686276954,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(FactOrdenesTrabajo.Estado)\"}],\"Category\":[{\"queryRef\":\"DimTecnico.Especialidad\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimTecnico\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Estado\"}},\"Function\":5},\"Name\":\"CountNonNull(FactOrdenesTrabajo.Estado)\",\"NativeReferenceName\":\"Estado\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Especialidad\"},\"Name\":\"DimTecnico.Especialidad\",\"NativeReferenceName\":\"Especialidad\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Estado\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 288.77,
+          "width": 374.92,
+          "x": 465.86,
+          "y": 499.36,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"dec7fff78e034ba2761d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":874.4292163029838,\"y\":395.16190538272247,\"z\":7000,\"width\":405.8419568795528,\"height\":216.27104281081432,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimTecnico.NombreTecnico\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimTecnico\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreTecnico\"},\"Name\":\"DimTecnico.NombreTecnico\",\"NativeReferenceName\":\"Nombre Tecnico\"}]},\"columnProperties\":{\"DimTecnico.NombreTecnico\":{\"displayName\":\"Nombre Tecnico\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 216.27,
+          "width": 405.84,
+          "x": 874.43,
+          "y": 395.16,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"ec5fd217abeaec401d52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.69009011945309,\"y\":246.97619086420156,\"z\":6000,\"width\":833.0440167527663,\"height\":245.64118442709776,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"FactOrdenesTrabajo.Estado\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(FactOrdenesTrabajo.TiempoEstimado)\"},{\"queryRef\":\"MEDIDAS.RendimientoTecnico\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Estado\"},\"Name\":\"FactOrdenesTrabajo.Estado\",\"NativeReferenceName\":\"Estado\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TiempoEstimado\"}},\"Function\":5},\"Name\":\"CountNonNull(FactOrdenesTrabajo.TiempoEstimado)\",\"NativeReferenceName\":\"Recuento de Tiempo Estimado\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RendimientoTecnico\"},\"Name\":\"MEDIDAS.RendimientoTecnico\",\"NativeReferenceName\":\"Rendimiento Tecnico\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TiempoEstimado\"}},\"Function\":5}}}]},\"columnProperties\":{\"CountNonNull(FactOrdenesTrabajo.TiempoEstimado)\":{\"displayName\":\"Recuento de Tiempo Estimado\"},\"MEDIDAS.RendimientoTecnico\":{\"displayName\":\"Rendimiento Tecnico\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 245.64,
+          "width": 833.04,
+          "x": 18.69,
+          "y": 246.98,
+          "z": 6000.00
         }
       ],
       "width": 1280.00
@@ -675,6 +806,90 @@
       "width": 1280.00
     },
     {
+<<<<<<< HEAD
+      "config": "{}",
+      "displayName": "Dash1-GC",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1280.00,
+      "name": "8cd939a6425ab99c823d",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0d0b466432bb0a302481\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.2857142857144,\"y\":619.1428048270095,\"z\":6000,\"width\":504.28571428571433,\"height\":71.42857142857143,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.NombreMes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreMes\"},\"Name\":\"DimFecha.NombreMes\",\"NativeReferenceName\":\"Mes\"}]},\"columnProperties\":{\"DimFecha.NombreMes\":{\"displayName\":\"Mes\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 71.43,
+          "width": 504.29,
+          "x": 764.29,
+          "y": 619.14,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"338f544fa0a062e3cc1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6.571393694196429,\"y\":480.8571079799106,\"z\":3000,\"width\":742.8571428571429,\"height\":497.14285714285717,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimServicio.NombreServicio\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(FactRepuestosUsados.CostoTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"FactRepuestosUsados\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreServicio\"},\"Name\":\"DimServicio.NombreServicio\",\"NativeReferenceName\":\"Servicio\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0},\"Name\":\"Sum(FactRepuestosUsados.CostoTotal)\",\"NativeReferenceName\":\"Suma de CostoTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0}}}]},\"columnProperties\":{\"DimServicio.NombreServicio\":{\"displayName\":\"Servicio\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Total'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8DFE9F'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Suma de Costo Total por Servicio'\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 497.14,
+          "width": 742.86,
+          "x": 6.57,
+          "y": 480.86,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"6296d76daab0a332b705\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.240066911091969,\"y\":93.68373914607332,\"z\":2000,\"width\":629.4517197968368,\"height\":341.3975429406573,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimFecha.NombreMes\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(FactRepuestosUsados.CostoTotal)\"},{\"queryRef\":\"Sum(FactOrdenesTrabajo.CostoTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"FactRepuestosUsados\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreMes\"},\"Name\":\"DimFecha.NombreMes\",\"NativeReferenceName\":\"Mes\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0},\"Name\":\"Sum(FactOrdenesTrabajo.CostoTotal)\",\"NativeReferenceName\":\"Ordenes de Trabajo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"CostoTotal\"}},\"Function\":0},\"Name\":\"Sum(FactRepuestosUsados.CostoTotal)\",\"NativeReferenceName\":\"Repuestos usados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"CostoTotal\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(FactRepuestosUsados.CostoTotal)\":{\"displayName\":\"Repuestos usados\"},\"Sum(FactOrdenesTrabajo.CostoTotal)\":{\"displayName\":\"Ordenes de Trabajo\"},\"DimFecha.NombreMes\":{\"displayName\":\"Mes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Total'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaMatchStrokeColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8DFE9F'\"}}}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"strokeShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strokeTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"70D\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8DFE9F'\"}}}}}},\"selector\":{\"metadata\":\"Sum(FactRepuestosUsados.CostoTotal)\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F9B0BF'\"}}}}}},\"selector\":{\"metadata\":\"Sum(FactOrdenesTrabajo.CostoTotal)\"}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Total de Ordenes de Trabajo vs Total de Repuesto Usados'\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 341.40,
+          "width": 629.45,
+          "x": 7.24,
+          "y": 93.68,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"854579058304e21562ae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":750,\"y\":92.85714285714286,\"z\":1000,\"width\":505.7142857142857,\"height\":341.42857142857144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(FactOrdenesTrabajo.CostoTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0},\"Name\":\"Sum(FactOrdenesTrabajo.CostoTotal)\",\"NativeReferenceName\":\"Suma de CostoTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CostoTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8DFE9F'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Total por Ordenes de Trabajo '\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 341.43,
+          "width": 505.71,
+          "x": 750.00,
+          "y": 92.86,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9c5b16d6741206048e10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.2857142857144,\"y\":546.2856619698666,\"z\":4000,\"width\":504.28571428571433,\"height\":85.71428571428572,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimServicio.Categoria\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"DimServicio.Categoria\",\"NativeReferenceName\":\"Categoria\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 85.71,
+          "width": 504.29,
+          "x": 764.29,
+          "y": 546.29,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ba056176751d0a36e6b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.8571777343751,\"y\":512.5714111328131,\"z\":5000,\"width\":70,\"height\":34.285714285714285,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filtros\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 34.29,
+          "width": 70.00,
+          "x": 764.86,
+          "y": 512.57,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d1b19678200d800eeaa3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":801.4285714285714,\"height\":62.85714285714286,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Ventas en Relacion a Servicios (2024 - 2025)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 62.86,
+          "width": 801.43,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d95aeb13704dbc25ee40\",\"layouts\":[{\"id\":0,\"position\":{\"x\":764.2857142857144,\"y\":701.9999476841523,\"z\":7000,\"width\":504.28571428571433,\"height\":77.14285714285715,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.Anio\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Anio\"},\"Name\":\"DimFecha.Anio\",\"NativeReferenceName\":\"Año\"}]},\"columnProperties\":{\"DimFecha.Anio\":{\"displayName\":\"Año\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Anio\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}]]}}}]}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 77.14,
+          "width": 504.29,
+          "x": 764.29,
+          "y": 702.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+=======
       "config": "{\"relationships\":[{\"source\":\"32b9e740d1772de9447d\",\"target\":\"308113ad8ac9170b49c4\",\"type\":3},{\"source\":\"32b9e740d1772de9447d\",\"target\":\"2c0dcecfed051a3a2646\",\"type\":3},{\"source\":\"32b9e740d1772de9447d\",\"target\":\"4c1a151958c4492c95a9\",\"type\":3}]}",
       "displayName": "Dash2-IC",
       "displayOption": 3,
@@ -830,6 +1045,7 @@
         }
       ],
       "width": 1500.00
+>>>>>>> 653b2d30f32f2b629286be2cfa88365948e605a0
     },
     {
       "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'20250628_1950_Fondo Elegante de Taller_simple_compose_01jywnzxvff79bx3ybgsmz1fk4.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"20250628_1950_Fondo_Elegante_d6329686817031137.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]}}",
