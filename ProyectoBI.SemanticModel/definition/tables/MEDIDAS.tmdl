@@ -183,6 +183,91 @@ table MEDIDAS
 		formatString: 0
 		lineageTag: e54b6354-623e-4d73-ad1a-52d7ecc75a27
 
+	measure BrechaTiempo = ```
+			
+			SUM(factordenestrabajo[tiemporeal]) - SUM(factordenestrabajo[tiempoestimado])
+			
+			```
+		formatString: 0
+		lineageTag: 556528c8-86c8-4605-8c73-09538c2c44cb
+
+	measure ConteoServicios = ```
+			COUNT(factordenestrabajo[idordentrabajoDW])
+			
+			```
+		formatString: 0
+		lineageTag: ebbba910-d616-435e-b962-3e89cc643aa5
+
+	measure Costo_Total = ```
+			SUM(factordenestrabajo[costototal])
+			
+			```
+		lineageTag: d8aa653f-cb7b-4941-a87c-795c4129f179
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure CostoMaterial = ```
+			
+			SUMX(
+			    FactRepuestosUsados,
+			    FactRepuestosUsados[costounitario] * FactRepuestosUsados[cantidadutilizada]
+			)
+			
+			```
+		lineageTag: 67dc930f-b202-4e76-b88d-c4fa9cc85891
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Egresos_Estimados = ```
+			SUM(factordenestrabajo[costototal]) * 0.65
+			
+			```
+		lineageTag: 6e1e036b-fde0-46d4-9666-78b1f39d53d0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure GastoPromedioPorVehiculo =
+			
+			AVERAGEX(
+			    VALUES(dimvehiculo[idvehiculodw]),
+			    CALCULATE(SUM(factordenestrabajo[costototal]))
+			)
+		lineageTag: 7084d024-8007-4575-b271-d693415db466
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ingresos_Mensuales = ```
+			SUM(factordenestrabajo[costototal])
+			
+			```
+		lineageTag: 2b813edd-cc78-474c-b02c-969f30232b53
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure TiempoEstimadoTotal = SUM(factordenestrabajo[tiempoestimado])
+		formatString: 0
+		lineageTag: 0c101d64-291d-46e4-bbdf-e1d670ee3cd8
+
+	measure TiempoRealTotal = ```
+			SUM(factordenestrabajo[tiemporeal])
+			
+			```
+		formatString: 0
+		lineageTag: 71eb4d9f-28b7-431a-9b22-15ee3e609148
+
+	measure TotalVehiculosAtendidos = ```
+			
+			DISTINCTCOUNT(factordenestrabajo[idvehiculodw])
+			
+			```
+		formatString: 0
+		lineageTag: d24dfb96-cab9-49dc-981a-885c35515fe7
+
+	measure Costo_Servicio = AVERAGE(factordenestrabajo[costototal])
+		lineageTag: 391714fd-ce58-47e0-bcd1-b76c01b9ef5b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition MEDIDAS = m
 		mode: import
 		source =

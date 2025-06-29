@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":6,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":7,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "pods": [
     {
@@ -884,6 +884,163 @@
         }
       ],
       "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"32b9e740d1772de9447d\",\"target\":\"308113ad8ac9170b49c4\",\"type\":3},{\"source\":\"32b9e740d1772de9447d\",\"target\":\"2c0dcecfed051a3a2646\",\"type\":3},{\"source\":\"32b9e740d1772de9447d\",\"target\":\"4c1a151958c4492c95a9\",\"type\":3}]}",
+      "displayName": "Dash2-IC",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "9d47d3759a55d9aac909",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2c0dcecfed051a3a2646\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":100,\"z\":1,\"width\":654,\"height\":366,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MEDIDAS.TotalVehiculosAtendidos\"}],\"Category\":[{\"queryRef\":\"DimVehiculo.Tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalVehiculosAtendidos\"},\"Name\":\"MEDIDAS.TotalVehiculosAtendidos\",\"NativeReferenceName\":\"TotalVehiculosAtendidos\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DimVehiculo.Tipo\",\"NativeReferenceName\":\"Tipo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalVehiculosAtendidos\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Percent of total'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Distribución de Vehículos Atendidos por Tipo'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 366.00,
+          "width": 654.00,
+          "x": 46.00,
+          "y": 100.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"308113ad8ac9170b49c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784,\"y\":100,\"z\":2,\"width\":634,\"height\":366,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimVehiculo.Tipo\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.GastoPromedioPorVehiculo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DimVehiculo.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"GastoPromedioPorVehiculo\"},\"Name\":\"MEDIDAS.GastoPromedioPorVehiculo\",\"NativeReferenceName\":\"GastoPromedioPorVehiculo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"GastoPromedioPorVehiculo\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimVehiculo\"}},\"Property\":\"Tipo\"}},\"Right\":{\"Literal\":{\"Value\":\"'Deportivo'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimVehiculo\"}},\"Property\":\"Tipo\"}},\"Right\":{\"Literal\":{\"Value\":\"'SUV'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimVehiculo\"}},\"Property\":\"Tipo\"}},\"Right\":{\"Literal\":{\"Value\":\"'Camioneta'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimVehiculo\"}},\"Property\":\"Tipo\"}},\"Right\":{\"Literal\":{\"Value\":\"'Sedán'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Gasto Promedio por Tipo de Vehículo'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 366.00,
+          "width": 634.00,
+          "x": 784.00,
+          "y": 100.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"32b9e740d1772de9447d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":324,\"y\":964,\"z\":5,\"width\":376,\"height\":150,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimVehiculo.Tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DimVehiculo.Tipo\",\"NativeReferenceName\":\"Tipo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Camioneta'\"}}]]}}}]}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 376.00,
+          "x": 324.00,
+          "y": 964.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"4c1a151958c4492c95a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784,\"y\":528,\"width\":634,\"height\":378,\"z\":6,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MEDIDAS.TiempoEstimadoTotal\"},{\"queryRef\":\"MEDIDAS.BrechaTiempo\"}],\"Category\":[{\"queryRef\":\"DimTecnico.NombreTecnico\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimTecnico\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TiempoEstimadoTotal\"},\"Name\":\"MEDIDAS.TiempoEstimadoTotal\",\"NativeReferenceName\":\"TiempoEstimadoTotal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreTecnico\"},\"Name\":\"DimTecnico.NombreTecnico\",\"NativeReferenceName\":\"NombreTecnico\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BrechaTiempo\"},\"Name\":\"MEDIDAS.BrechaTiempo\",\"NativeReferenceName\":\"BrechaTiempo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TiempoEstimadoTotal\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#46881D'\"}}}}}},\"selector\":{\"metadata\":\"MEDIDAS.TiempoEstimadoTotal\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9E1010'\"}}}}}},\"selector\":{\"metadata\":\"MEDIDAS.BrechaTiempo\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Eficiencia de Tiempos por Técnico'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 378.00,
+          "width": 634.00,
+          "x": 784.00,
+          "y": 528.00,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"4c6824dca4bc645ec8ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":785,\"y\":965,\"z\":4,\"width\":347.5,\"height\":150,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"},\"Name\":\"DimFecha.Mes\",\"NativeReferenceName\":\"Mes\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"4D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"7D\"}}}}}}}]}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 347.50,
+          "x": 785.00,
+          "y": 965.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"c82bf55001ec74661503\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46,\"y\":528,\"z\":3,\"width\":654,\"height\":378,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MEDIDAS.ConteoServicios\"}],\"Category\":[{\"queryRef\":\"DimVehiculo.Tipo\",\"active\":true}],\"Series\":[{\"queryRef\":\"DimServicio.NombreServicio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimVehiculo\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DimServicio\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ConteoServicios\"},\"Name\":\"MEDIDAS.ConteoServicios\",\"NativeReferenceName\":\"ConteoServicios\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DimVehiculo.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"NombreServicio\"},\"Name\":\"DimServicio.NombreServicio\",\"NativeReferenceName\":\"NombreServicio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ConteoServicios\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"22L\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Servicios más Frecuentes por Tipo de Vehículo'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 378.00,
+          "width": 654.00,
+          "x": 46.00,
+          "y": 528.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"d1806fa96a34a5aec302\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":1270,\"height\":70,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Análisis por tipo de vehículo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"32pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 1270.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1500.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dash1-IC",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "be47546c70e167b6b8a6",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3b7148bc9e44987b2466\",\"layouts\":[{\"id\":0,\"position\":{\"x\":856,\"y\":1000,\"z\":6,\"width\":344,\"height\":152,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MEDIDAS.ORDENES_ENPROCESO\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_ENPROCESO\"},\"Name\":\"MEDIDAS.ORDENES_ENPROCESO\",\"NativeReferenceName\":\"Ordenes en proceso\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ORDENES_ENPROCESO\"}}}]},\"columnProperties\":{\"MEDIDAS.ORDENES_ENPROCESO\":{\"displayName\":\"Ordenes en proceso\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 152.00,
+          "width": 344.00,
+          "x": 856.00,
+          "y": 1000.00,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"3ce68ad3825750a682db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.5,\"y\":117.5,\"z\":2,\"width\":680,\"height\":395,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimFecha.MesAño\",\"active\":true}],\"Series\":[{\"queryRef\":\"DimServicio.NombreServicio\"}],\"Y\":[{\"queryRef\":\"MEDIDAS.Costo_Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DimServicio\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MesAño\"},\"Name\":\"DimFecha.MesAño\",\"NativeReferenceName\":\"MesAño1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"NombreServicio\"},\"Name\":\"DimServicio.NombreServicio\",\"NativeReferenceName\":\"NombreServicio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Costo_Total\"},\"Name\":\"MEDIDAS.Costo_Total\",\"NativeReferenceName\":\"Costo_Total1\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showOnValueAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showTooltip\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Mes Año'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tendencias de costos operativos'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"padding\":[{\"properties\":{\"right\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 395.00,
+          "width": 680.00,
+          "x": 782.50,
+          "y": 117.50,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"562230a811c6d0089e83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":438,\"y\":1000,\"z\":5,\"width\":344,\"height\":152,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(FactOrdenesTrabajo.IdOrdenTrabajoDW)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"IdOrdenTrabajoDW\"}},\"Function\":5},\"Name\":\"CountNonNull(FactOrdenesTrabajo.IdOrdenTrabajoDW)\",\"NativeReferenceName\":\"Recuento de ordenes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"IdOrdenTrabajoDW\"}},\"Function\":5}}}]},\"columnProperties\":{\"CountNonNull(FactOrdenesTrabajo.IdOrdenTrabajoDW)\":{\"displayName\":\"Recuento de ordenes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"94f3f6d960003243c1b3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"FactOrdenesTrabajo\"}},\"Property\":\"Estado\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactOrdenesTrabajo\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Estado\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Terminado'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 152.00,
+          "width": 344.00,
+          "x": 438.00,
+          "y": 1000.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"8f9bdba05601a0075e27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.5,\"y\":555,\"z\":7,\"width\":680,\"height\":395,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimRepuesto.NombreRepuesto\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.CostoMaterial\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimRepuesto\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreRepuesto\"},\"Name\":\"DimRepuesto.NombreRepuesto\",\"NativeReferenceName\":\"Recuento de NombreRepuesto\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CostoMaterial\"},\"Name\":\"MEDIDAS.CostoMaterial\",\"NativeReferenceName\":\"CostoMaterial1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CostoMaterial\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Repuestos por Costo Acumulado'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 395.00,
+          "width": 680.00,
+          "x": 782.50,
+          "y": 555.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"9696c57079318b4d3610\",\"layouts\":[{\"id\":0,\"position\":{\"x\":42.5,\"y\":1025,\"z\":3,\"width\":280,\"height\":97.5,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimFecha.Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"},\"Name\":\"DimFecha.Mes\",\"NativeReferenceName\":\"Mes\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"9D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"11D\"}}}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 97.50,
+          "width": 280.00,
+          "x": 42.50,
+          "y": 1025.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"d762a25370c470600009\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1,\"width\":1500,\"height\":97.5,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Costos y rentabilidad del taller\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"40pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 97.50,
+          "width": 1500.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"f2540ee376bc4c060113\",\"layouts\":[{\"id\":0,\"position\":{\"x\":122,\"y\":554,\"z\":4,\"width\":548,\"height\":396,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimFecha.MesAño\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.Egresos_Estimados\"},{\"queryRef\":\"MEDIDAS.Ingresos_Mensuales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimFecha\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MesAño\"},\"Name\":\"DimFecha.MesAño\",\"NativeReferenceName\":\"MesAño1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Egresos_Estimados\"},\"Name\":\"MEDIDAS.Egresos_Estimados\",\"NativeReferenceName\":\"Egresos_Estimados1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ingresos_Mensuales\"},\"Name\":\"MEDIDAS.Ingresos_Mensuales\",\"NativeReferenceName\":\"Ingresos_Mensuales1\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"metadata\":\"MEDIDAS.Egresos_Estimados\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}},\"selector\":{\"metadata\":\"MEDIDAS.Ingresos_Mensuales\"}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ingresos vs Egresos mensuales'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 396.00,
+          "width": 548.00,
+          "x": 122.00,
+          "y": 554.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"f345db95e206dc4b0040\",\"layouts\":[{\"id\":0,\"position\":{\"x\":122.5,\"y\":117.5,\"z\":0,\"width\":547.5,\"height\":395,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimServicio.NombreServicio\",\"active\":true}],\"Y\":[{\"queryRef\":\"MEDIDAS.Costo_Servicio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimServicio\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MEDIDAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"NombreServicio\"},\"Name\":\"DimServicio.NombreServicio\",\"NativeReferenceName\":\"NombreServicio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Costo_Servicio\"},\"Name\":\"MEDIDAS.Costo_Servicio\",\"NativeReferenceName\":\"Costo_Servicio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Costo_Servicio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Por Servicio'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo promedio por reparaci'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"switchAxisPosition\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"valueMin\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"valueSize\":{\"expr\":{\"Literal\":{\"Value\":\"238.1942822295369D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costro promedio por reparación'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.2}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "height": 395.00,
+          "width": 547.50,
+          "x": 122.50,
+          "y": 117.50,
+          "z": 0.00
+        }
+      ],
+      "width": 1500.00
     },
     {
       "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'20250628_1950_Fondo Elegante de Taller_simple_compose_01jywnzxvff79bx3ybgsmz1fk4.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"20250628_1950_Fondo_Elegante_d6329686817031137.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]}}",
